@@ -1,0 +1,107 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem;
+}
+
+.contactsTitle {
+  text-align: center;
+  color: #000;
+  font-weight: 600;
+  font-size: 5rem;
+  margin-bottom: 3rem;
+}
+
+.contactsForm form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.contactsForm form .form__left > .formInput:not(:first-child) {
+  margin-top: 2rem;
+}
+
+.formInput {
+  width: 250px;
+}
+
+.formTitle {
+  color: rgb(55, 53, 47);
+  border-bottom: 0px;
+  margin-bottom: 8px;
+  padding-bottom: 0px;
+  font-size: 16px;
+  font-weight: 500;
+  width: auto;
+}
+
+.formInput input {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 4px 10px;
+  position: relative;
+  border-radius: 3px;
+  box-shadow: rgba(15, 15, 15, 0.1) 0px 0px 0px 1px inset;
+  background: rgba(242, 241, 238, 0.6);
+  cursor: text;
+  outline: none;
+  border: none;
+}
+
+.formInput input:focus {
+  outline: none;
+  box-shadow: rgb(46 170 220 / 70%) 0px 0px 0px 1px inset,
+    rgb(46 170 220 / 40%) 0px 0px 0px 2px !important;
+}
+
+.requiredAsterisk {
+  color: hsl(0, 80%, 50%);
+}
+
+.form__right {
+  display: flex;
+  flex-direction: column;
+  margin-left: 4rem;
+}
+
+.formText {
+  width: 100%;
+  height: 100%;
+}
+
+.formText textarea {
+  height: 300px;
+  width: 300px;
+  padding: 1rem;
+  outline: 1px solid black;
+  border-radius: 3px;
+  border: none;
+}
+
+.submitBtn {
+  border: none;
+  outline: none;
+  background: hsl(0, 50%, 0%);
+  color: hsl(0, 50%, 100%);
+  width: 100%;
+  height: 2rem;
+  margin-top: 2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.submitBtn:focus {
+  outline: 2px dashed yellow;
+  outline-offset: 3px;
+}
+
+.contactsFooter {
+  text-align: center;
+  margin-top: 4rem;
+}
